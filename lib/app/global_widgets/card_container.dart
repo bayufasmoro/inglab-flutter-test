@@ -1,7 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:inglab_flutter_test/res/app_colors.dart';
+
+import '../core/res/app_colors.dart';
 
 
 class CardContainer extends StatelessWidget {

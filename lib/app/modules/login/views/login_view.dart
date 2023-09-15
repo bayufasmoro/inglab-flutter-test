@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:inglab_flutter_test/res/app_colors.dart';
-import 'package:inglab_flutter_test/res/app_icons.dart';
-import 'package:inglab_flutter_test/utils/app_textstyles.dart';
-import 'package:inglab_flutter_test/utils/validator.dart';
 
+import '../../../core/res/app_colors.dart';
+import '../../../core/res/app_icons.dart';
+import '../../../core/utils/app_textstyles.dart';
+import '../../../core/utils/validator.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
@@ -33,6 +33,8 @@ class LoginView extends GetView<LoginController> {
                 padding: const EdgeInsets.fromLTRB(16, 16, 16, 60),
                 child: Column(
                   children: [
+
+                    // Widget: Logo
                     Expanded(
                         child: Center(
                       child: Image.asset(
@@ -41,6 +43,8 @@ class LoginView extends GetView<LoginController> {
                         height: 100,
                       ),
                     )),
+
+                    // Widget: Login Form
                     Obx(() => Form(
                       key: controller.formGlobalKey,
                       child: Column(

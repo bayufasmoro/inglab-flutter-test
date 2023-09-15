@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:inglab_flutter_test/app/data/remote/remote_constants.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
+
+import '../../../core/constants/remote_constants.dart';
 
 class BaseDio {
   Dio init() {

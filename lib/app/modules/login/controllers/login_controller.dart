@@ -24,9 +24,11 @@ class LoginController extends GetxController {
     super.onClose();
   }
 
+  // Method to open home page
   void goToHomePage() async {
+    // Check if form is validated
     if (formGlobalKey.currentState!.validate()) {
-
+      // Go to home page
       Get.toNamed(Routes.HOME);
     }
   }
